@@ -1,4 +1,5 @@
 // script.js
+
 let messageCount = 0;
 
 document.getElementById('sendButton').addEventListener('click', sendMessage);
@@ -108,16 +109,12 @@ function stopRecording() {
     let responseText = '';
 
     if (recordDuration < 20000) {
-        responseImage = 'images/png1.png';
         responseText = 'Ответ на аудио 1';
     } else if (recordDuration < 40000) {
-        responseImage = 'images/png2.png';
         responseText = 'Ответ на аудио 2';
     } else if (recordDuration < 60000) {
-        responseImage = 'images/png3.png';
         responseText = 'Ответ на аудио 3';
     } else {
-        responseImage = 'images/png4.png';
         responseText = 'Ответ на аудио 4';
     }
 
