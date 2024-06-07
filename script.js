@@ -108,11 +108,11 @@ function stopRecording() {
     let responseImage = '';
     let responseText = '';
 
-    if (recordDuration < 20000) {
+    if (recordDuration < 10000) {
         responseText = 'Ответ на аудио 1';
-    } else if (recordDuration < 40000) {
+    } else if (recordDuration < 20000) {
         responseText = 'Ответ на аудио 2';
-    } else if (recordDuration < 60000) {
+    } else if (recordDuration < 30000) {
         responseText = 'Ответ на аудио 3';
     } else {
         responseText = 'Ответ на аудио 4';
